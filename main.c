@@ -6,7 +6,7 @@
 /*   By: a <a@student.42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/26 08:55:41 by jervasti          #+#    #+#             */
-/*   Updated: 2022/02/10 18:14:11 by jervasti         ###   ########.fr       */
+/*   Updated: 2022/02/17 11:15:05 by jervasti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,6 +124,7 @@ int	main(int ac, char **av)
 		ft_putstr("error\n");
 		return (1);
 	}
+	close(av[1]);
 	if (!map_optimizer(list))
 		return (1);
 	return (0);
